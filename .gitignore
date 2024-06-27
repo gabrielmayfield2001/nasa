@@ -5,3 +5,6 @@ lib/
 
 # Ignore VSCode extensions and settings
 .vscode/
+
+# Ignore system files
+.DS_Store
