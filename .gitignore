@@ -1,0 +1,7 @@
+# Ignore Python libraries
+*.pyc
+__pycache__/
+lib/
+
+# Ignore VSCode extensions and settings
+.vscode/
