@@ -1,10 +1,8 @@
-def read_in_file(input_file, output_file):
-    with open(input_file, 'r') as in_file, open(output_file, 'w') as out_file:
-        for line_num, line in enumerate(in_file, start=1):
-            out_file.write(f'{line_num}: {line}')
+def print_lines_in_file(inputfile, outputfile):
+    with open(inputfile, 'r', encoding='utf-8') as input, open(outputfile, 'w', encoding='utf-8') as output:
+        for line_num, content in enumerate(input, start=1):
+            output.write(f"{line_num}: {content}")
 
-
-inputfile = 'text.txt'
-outputfile = 'output.txt'
-
-read_in_file(inputfile, outputfile)
+inp = 'text.txt'
+outp = 'output_last.txt'
+print_lines_in_file(inp, outp)
